@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>xtrachores | Home</title>
+  </head>
+  <body>
+    <!-- ================================================= -->
+    <!-- Header section start -->
+    <!-- ================================================= -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black/30 backdrop-blur-[2px] hidden z-40"
+    ></div>
+    <header class="mb-3.5 relative">
+      <div class="border-b border-[#E7E7E7]">
+        <div class="container-lg">
+          <div class="flex items-center justify-between pt-3.5 pb-[15px] gap-4">
+            <div class="flex-1 flex items-center gap-4">
+              <button id="hamburger-icon" class="lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class="w-6 h-6"
+                >
+                  <g>
+                    <g fill="#000" fill-rule="evenodd" clip-rule="evenodd">
+                      <path
+                        d="M2 11h20v2H2zM2 5h20v2H2zM2 17h20v2H2z"
+                        fill="#000000"
+                        opacity="1"
+                        data-original="#000000"
+                        class="w-10 h-10"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <a
+                href="#"
+                class="max-w-[200px] md:max-w-[300px] lg:max-w-[420px]"
+                ><img src="./assets/images/logo.svg" alt="logo"
+              /></a>
+            </div>
+            <div class="flex items-center gap-3.5">
+              <a
+                href="#"
+                class="hidden lg:flex items-center gap-2 px-6 py-0.5 font-medium"
+              >
+                <img src="./assets/icon/login-icon.svg" alt="login icon" />
+                Login/Sign-up
+              </a>
+              <a
+                href="#"
+                class="hidden lg:flex items-center gap-2 px-6 py-0.5 font-medium bg-sky/20 leading-9 rounded-full text-blue transition-all duration-500 hover:bg-blue hover:text-white"
+              >
+                Become a freelancer
+              </a>
+              <a
+                href="#"
+                class="flex items-center gap-2 sm:px-6 py-0.5 font-medium leading-9 rounded-full text-white sm:bg-sky transition-all duration-500 hover:bg-blue hover:text-white"
+              >
+                <svg
+                  class="text-black sm:text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  fill="none"
+                  viewBox="0 0 21 20"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M10.6 18.334a8.333 8.333 0 1 1 0-16.667 8.333 8.333 0 0 1 0 16.667m-.833-9.167H6.434v1.667h3.333v3.333h1.667v-3.333h3.333V9.167h-3.333V5.834H9.767z"
+                  />
+                </svg>
+                <span class="hidden sm:block">Post a job</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-lg">
+        <div
+          id="menu"
+          class="absolute top-0 -left-[99%] lg:left-0 w-4/5 lg:w-full h-screen lg:h-auto lg:relative bg-white flex flex-col justify-between gap-5 px-4 py-5 transition-all duration-700 shadow-2xl lg:shadow-none z-50"
+        >
+          <div
+            class="flex-1 py-[7px] flex flex-col lg:flex-row items-start lg:items-center divide-y lg:divide-y-0 divide-amber-300 relative"
+          >
+            <button
+              class="text-sm sm:text-base font-semibold leading-8 sm:leading-9 text-black lg:-ml-5 flex items-center gap-2 cursor-pointer lg:px-5 w-full lg:w-auto py-1 lg:py-0 lg:rounded-full transition duration-500 hover:bg-gray-200"
+            >
+              <img
+                src="./assets/icon/categories.svg"
+                alt="categories icon"
+              />Categories
+            </button>
+            <a
+              href="#"
+              class="text-sm sm:text-base font-semibold leading-8 sm:leading-9 text-black flex items-center gap-2 cursor-pointer lg:px-5 w-full lg:w-auto py-1 lg:py-0 lg:rounded-full transition duration-500 hover:bg-gray-200"
+              >Find a Jobber</a
+            >
+            <a
+              href="#"
+              class="text-sm sm:text-base font-semibold leading-8 sm:leading-9 text-black flex items-center gap-2 cursor-pointer lg:px-5 w-full lg:w-auto py-1 lg:py-0 lg:rounded-full transition duration-500 hover:bg-gray-200"
+              >Find a Task</a
+            >
+            <a
+              href="#"
+              class="text-sm sm:text-base font-semibold leading-8 sm:leading-9 text-black flex items-center gap-2 cursor-pointer lg:px-5 w-full lg:w-auto py-1 lg:py-0 lg:rounded-full transition duration-500 hover:bg-gray-200"
+              >Find service packages</a
+            >
+            <div class="absolute top-0 right-0 lg:hidden">
+              <svg
+                id="close-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0"
+                y="0"
+                viewBox="0 0 24 24"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+                class="w-6 h-6"
+              >
+                <g>
+                  <path
+                    fill="#000000"
+                    fill-rule="evenodd"
+                    d="M5 17.586a1 1 0 1 0 1.415 1.415L12 13.414 17.586 19A1 1 0 0 0 19 17.586L13.414 12 19 6.414A1 1 0 0 0 17.585 5L12 10.586 6.414 5A1 1 0 0 0 5 6.414L10.586 12z"
+                    clip-rule="evenodd"
+                    opacity="1"
+                    data-original="#000000"
+                    class="w-6 h-6"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="lg:hidden">
+            <a
+              href="#"
+              class="flex items-center gap-2 px-6 py-0.5 leading-9 w-fit"
+            >
+              <img src="./assets/icon/login-icon.svg" alt="login icon" />
+              Login/Sign-up
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-2 px-6 py-0.5 bg-sky/20 leading-9 rounded-full text-blue transition-all duration-500 hover:bg-blue hover:text-white w-fit"
+            >
+              Become a freelancer
+            </a>
+          </div>
+          <div
+            class="lg:hidden text-center border-t border-[#E7E7E7] py-3 flex flex-col gap-2"
+          >
+            <p>Copyright © 2025 <span class="underline">Yo!Gigs</span></p>
+            <p>
+              Developed by
+              <span class="underline">Dreamlabit Technologies.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================================================= -->
+    <!-- Header section end -->
+    <!-- ================================================= -->
+
+    <!-- ================================================= -->
+    <!-- Hero section start -->
+    <!-- ================================================= -->
+
+    <section>
+      <div
+        class="max-w-[2000px] mx-auto w-full relative py-[164px] bg-center bg-cover bg-no-repeat"
+        style="background-image: url(./assets/images/hero-bg.jpg)"
+      >
+        <div class="max-w-[1400px] w-full mx-auto">
+          <div
+            class="max-w-[54.286%] w-full bg-white/80 rounded-[10px] p-[42px]"
+          >
+            <h1>Find the Best <span class="underline">Professional</span> here!
+Right now and Right here</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================================= -->
+    <!-- Hero section end -->
+    <!-- ================================================= -->
+
+    <!-- ================================================= -->
+    <!-- Footer section end -->
+    <!-- ================================================= -->
+    <footer class="bg-sky">
+      <div class="border-b border-[#DDDDDD] py-16">
+        <div class="container grid sm:grid-cols-2 lg:grid-cols-4 gap-y-6">
+          <div>
+            <h5 class="text-title leading-7">Resources</h5>
+            <ul class="mt-3 md:mt-5">
+              <li><a href="#" class="leading-3.5 py-1.5 block">Home</a></li>
+              <li><a href="#" class="leading-3.5 py-1.5 block">Blog</a></li>
+              <li><a href="#" class="leading-3.5 py-1.5 block">About</a></li>
+              <li>
+                <a href="#" class="leading-3.5 py-1.5 block"
+                  >Knowledge Centre</a
+                >
+              </li>
+              <li>
+                <a href="#" class="leading-3.5 py-1.5 block"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="leading-3.5 py-1.5 block">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-title leading-7">For Clients</h5>
+            <ul class="mt-3 md:mt-5">
+              <li>
+                <a href="#" class="leading-3.5 py-1.5 block">Find a Talent</a>
+              </li>
+              <li>
+                <a href="#" class="leading-3.5 py-1.5 block">Browse Jobs</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-title leading-7">Socials</h5>
+            <div class="flex items-center gap-2 mt-3 md:mt-5">
+              <a
+                href="#"
+                class="p-2 border border-[#F3FAFD] rounded-full transition duration-500 hover:border-blue"
+              >
+                <img src="./assets/icon/facebook.svg" alt="facebook" />
+              </a>
+              <a
+                href="#"
+                class="p-2 border border-[#F3FAFD] rounded-full transition duration-500 hover:border-blue"
+              >
+                <img src="./assets/icon/twitter.svg" alt="twitter" />
+              </a>
+              <a
+                href="#"
+                class="p-2 border border-[#F3FAFD] rounded-full transition duration-500 hover:border-blue"
+              >
+                <img src="./assets/icon/instagram.svg" alt="instagram" />
+              </a>
+              <a
+                href="#"
+                class="p-2 border border-[#F3FAFD] rounded-full transition duration-500 hover:border-blue"
+              >
+                <img src="./assets/icon/pinterest.svg" alt="pinterest" />
+              </a>
+              <a
+                href="#"
+                class="p-2 border border-[#F3FAFD] rounded-full transition duration-500 hover:border-blue"
+              >
+                <img src="./assets/icon/linkdine.svg" alt="linkdine" />
+              </a>
+            </div>
+            <div
+              class="bg-white transition-all duration-500 hover:bg-blue hover:text-white rounded-full w-fit px-6 mt-3.5"
+            >
+              <a href="#" class="flex items-center leading-9 font-medium gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  fill="none"
+                  viewBox="0 0 21 21"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.077 6.272a6 6 0 0 0 6.612 9.708 2.6 2.6 0 0 0-.18-1.292 9.2 9.2 0 0 0-1.69-2.133c-.25-.266-.237-.47-.146-1.078l.01-.068c.062-.417.167-.662 1.565-.883a.96.96 0 0 1 1.156.565l.084.129c.163.263.411.462.703.567.123.056.277.127.483.243.49.28.49.596.49 1.287v.078q0 .391-.074.776a6 6 0 0 0-2.326-9.256c-.433.264-.83.583-1.182.95-.102.138-.245.848-.713.907a3 3 0 0 1-.46-.007c-.466-.03-1.104-.07-1.308.483a2.2 2.2 0 0 0 .267 1.8.44.44 0 0 1 .034.39.76.76 0 0 1-.22.373 2 2 0 0 1-.314-.323 2.06 2.06 0 0 0-.907-.723c-.138-.038-.29-.07-.438-.102-.411-.083-.877-.184-.985-.416a1.6 1.6 0 0 1-.08-.649 2.4 2.4 0 0 0-.153-1.009 1 1 0 0 0-.23-.322zm4.323 11.66a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15"
+                  />
+                </svg>
+                English - USD
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="text-title leading-7">Get in touch</h5>
+            <ul class="mt-3 md:mt-5">
+              <li class="flex items-center gap-3 leading-5 py-1">
+                <img src="./assets/icon/location.svg" alt="location icon" />
+                ITC 3, Sector 67, Sahibzada Ajit Singh Nagar, Punjab 160062
+              </li>
+              <li>
+                <a
+                  href="mailto:sales@fatbit.com"
+                  class="flex items-center gap-3 py-1"
+                  ><img
+                    src="./assets/icon/mail.svg"
+                    alt="mail"
+                  />sales@fatbit.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+91 6284314570"
+                  class="flex items-center gap-3 py-1"
+                  ><img src="./assets/icon/phone.svg" alt="mail" />+91
+                  6284314570</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container py-5">juhkhk</div>
+    </footer>
+    <!-- ================================================= -->
+    <!-- Footer section end -->
+    <!-- ================================================= -->
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
